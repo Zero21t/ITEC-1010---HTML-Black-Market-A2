@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Night Market</title>
+<style>
+
+	html {
+		scroll-behavior: smooth;
+	}
+	body{
+		background: Black;
+		
+	}
+	#market{
+		color:white; 
+		font-family: Impact;
+	}
+	.cyberskull{
+		position: absolute;
+		top: 8px;
+		left: 16px;
+		border-radius: 10px;
+	}
+	.sellers{
+		color: white;
+		position: absolute;
+		top: 150px;
+		right: 200px;
+		font-family:courier;
+		border:3px solid red; padding:5px; width:220px;
+	}.buyers{
+		color: white;
+		position: absolute;
+		top: 330px;
+		right: 200px;
+		font-family:courier;
+		border:3px solid red; padding:5px; width:220px;
+	}
+    
+    #box1{
+		color: white;
+		position: absolute;
+		top: 150px;
+		left: 400px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #C0C0C0; padding:5px; width:220px;height: 170px;
+	}#box1:hover{
+    background-color: #C0C0C0;
+    }.button1{
+    border: none;
+    position: absolute;
+    top: 370px;
+	left: 450px;
+    background-color: yellow;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    }
+    
+    
+    #box2{
+		color: white;
+		position: absolute;
+		top: 150px;
+		left: 650px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #FFD700; padding:5px; width:220px; height: 170px;
+	}#box2:hover{
+        background-color: #FFD700;
+    }.button2{
+        border: none;
+        position: absolute;
+        top: 370px;
+        left: 700px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    #box3{
+		color: white;
+		position: absolute;
+		top: 150px;
+		left: 900px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #FFD700; padding:5px; width:240px; height: 170px;
+	}#box3:hover{
+    background-color: #FFD700;
+    }.button3{
+        border: none;
+        position: absolute;
+        top: 370px;
+		left: 950px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    
+    #box4{
+		color: white;
+		position: absolute;
+		top: 150px;
+		left: 1170px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #CD7F32; padding:5px; width:220px; height: 170px;
+	}#box4:hover{
+    background-color: #CD7F32;
+    }.button4{
+        border: none;
+        position: absolute;
+        top: 370px;
+		left: 1220px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    
+    #box5{
+		color: white;
+		position: absolute;
+		top: 500px;
+		left: 400px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #FFD700; padding:5px; width:220px;height: 170px;
+	}#box5:hover{
+    background-color: #FFD700;
+    }.button5{
+        border: none;
+        position: absolute;
+        top: 720px;
+		left: 450px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    
+    #box6{
+		color: white;
+		position: absolute;
+		top: 500px;
+		left: 650px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #FFD700; padding:5px; width:240px; height: 170px;
+	}#box6:hover{
+    background-color: #FFD700;
+    }.button6{
+        border: none;
+        position: absolute;
+        top: 720px;
+		left: 700px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    #box7{
+		color: white;
+		position: absolute;
+		top: 500px;
+		left: 920px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #CD7F32; padding:5px; width:240px; height: 170px;
+	}#box7:hover{
+    background-color: #CD7F32;
+    }.button7{
+        border: none;
+        position: absolute;
+        top: 720px;
+		left: 970px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    #box8{
+		color: white;
+		position: absolute;
+		top: 500px;
+		left: 1190px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #C0C0C0; padding:5px; width:240px; height: 170px;
+	}#box8:hover{
+    background-color: #C0C0C0;
+    }.button8{
+        border: none;
+        position: absolute;
+        top: 720px;
+		left: 1240px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    #box9{
+		color: white;
+		position: absolute;
+		top: 950px;
+		left: 400px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #FFD700; padding:5px; width:260px;height: 170px;
+	}#box9:hover{
+    background-color: #FFD700;
+    }.button9{
+        border: none;
+        position: absolute;
+        top: 1170px;
+		left: 460px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    #box10{
+		color: white;
+		position: absolute;
+		top: 950px;
+		left: 690px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #C0C0C0; padding:5px; width:240px;height: 170px;
+	}#box10:hover{
+    background-color: #C0C0C0;
+    }.button10{
+        border: none;
+        position: absolute;
+        top: 1170px;
+		left: 760px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    #box11{
+		color: white;
+		position: absolute;
+		top: 950px;
+		left: 960px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #FFD700; padding:5px; width:240px;height: 170px;
+	}#box11:hover{
+    background-color: #FFD700;
+    }.button11{
+        border: none;
+        position: absolute;
+        top: 1170px;
+		left: 1025px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    
+    #box12{
+		color: white;
+		position: absolute;
+		top: 950px;
+		left: 1230px;
+		font-family:courier;
+		font-size: 14px;
+		border:3px solid #FFD700; padding:5px; width:310px;height: 170px;
+	}#box12:hover{
+    background-color: #FFD700;
+    }.button12{
+        border: none;
+        position: absolute;
+        top: 1170px;
+		left: 1300px;
+        background-color: yellow;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+
+
+    .ending{
+        color: white;
+        position: absolute;
+        top: 1370px;
+		left: 800px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<center><h1 id="market" >Night Market</h1></center>
+<center><p style="color:red;">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p></center>
+<img  src="https://wallpaperaccess.com/full/6200275.jpg" class="cyberskull" width="390" height="600"/>
+
+	<div class="auctions">
+		<div id="box1">
+			<p>portal gun</p>
+			<p>Seller: ZERO</p> 
+			<p>cost: $5,000</p>
+			<p>working portal gun from 2007 vale corporations game</p>
+		</div>
+		<div id="box2">
+			<p>Leviathan Axe</p>
+			<p>Seller: ZERO</p> 
+			<p>cost: $10,000</p>
+			<p>Famous weapon of kratos from God of war. The weapon of a god.</p>
+		</div>
+		<div id="box3">
+			<p>HOME-RUN BAT</p>
+			<p>Seller: pushypiper</p> 
+			<p>cost: $8,869</p>
+			<p>one swing from this video game bat and of you go towards the sunlight. aquired by super smash bros.</p>
+		</div>
+		<div id="box4">
+			<p>energy Sword</p>
+			<p>Seller: smileydoctor</p> 
+			<p>cost: $1,000</p>
+			<p>holographic like sword used best against aliens. must buy if interested. aquired by HALO SERIES.</p>
+		</div>
+		<div id="box5">
+			<p>KEYBLADE</p>
+			<p>Seller: backdraft</p> 
+			<p>cost: $6,340</p>
+			<p>magical key swords best against enemys of the dark. aquired by Kingdom Hearts series.</p>
+		</div>
+		<div id="box6">
+			<p>The Master Sword</p>
+			<p>Seller: mansioneffect</p> 
+			<p>cost: $14,970</p>
+			<p>oldest sword of the time, leads its weilder towards dangers and quests. Aquired by Legend of Zelda series.</p>
+		</div>
+		<div id="box7">
+			<p>The Blue Shell</p>
+			<p>Seller: smileydoctor</p> 
+			<p>cost: $3,000</p>
+			<p>on the highway? need to get somewhere quick? use the blue shell on other drivers. aquired by Mario kart</p>
+		</div>
+		<div id="box8">
+			<p>Ray gun</p>
+			<p>Seller: smileydoctor</p> 
+			<p>cost: $6,000</p>
+			<p>High speed zombie fighting machine pure joy when mowing down enemies. Aquired by Call of duty Series.</p>
+		</div>
+		<div id="box9">
+			<p>Rivers of Blood Katana</p>
+			<p>Seller: ZERO</p> 
+			<p>cost: $11,000</p>
+			<p>Blood sword made by its fallen enemy deals massive damage including bleed effects on enemys. acuired by elden ring.</p>
+		</div>
+		<div id="box10">
+			<p>Ifinity blade</p>
+			<p>Seller: backdraft</p> 
+			<p>cost: $8,000</p>
+			<p>increases magic damage by 5%. +9 critical strikes. 17-30 damage. Aquired by World of Warcraft</p>
+		</div>
+		<div id="box11">
+			<p>Blade of the black Empire</p>
+			<p>Seller: ZERO</p> 
+			<p>cost: $12,000</p>
+			<p>increases intelect +110 also +13 citritcal damage, also uses shadow damge. Aquired by World of Warcraft</p>
+		</div>
+		<div id="box12">
+			<p>Dagger of Time</p>
+			<p>Seller: ZERO</p> 
+			<p>cost: $20,000</p>
+			<p>ever wanted to undo a mistake like a video game save point once you've died. Aquired by Prince of persia: the sands of time.  </p>
+		</div>
+		<button class="button1" onclick="window.location.href='https://youtu.be/dQw4w9WgXcQ';">purchase</button>
+        <button class="button2" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        <button class="button3" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        <button class="button4" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        <button class="button5" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        <button class="button6" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        <button class="button7" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        <button class="button8" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        <button class="button9" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        <button class="button10" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+		<button class="button11" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+		<button class="button12" onclick="window.location.href='https://youtu.be/zkIqz2U6Vc0';">purchase</button>
+        
+	</div>
+    
+    <p class="ending">Created by: Aman Toor; for more details email: #j4%2nm(8%^@gmail.com</p>
+<div class="lists">
+	<div class="sellers">
+		<ol>
+			<h3>Best sellers</h3>
+			<li style="color: red;">pushypiper</li>
+			<li style= "color: green;" >smileydoctor</li>
+			<li style= "color: green;">mansioneffect</li>
+			<li style= "color: green;">backdraft</li>
+			<li style= "color: green;">ZERO</li>
+		</ol>
+	</div>
+	<div class="buyers">
+		<ul>
+			<h3>Best Buyers</h3>
+			<li style="color: red;">screampunish</li>
+			<li style= "color: green;" >courtmarket</li>
+			<li style= "color: green;">cryrosemary</li>
+			<li style= "color: green;">expressspades</li>
+			<li style= "color: green;">loverdecline</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
